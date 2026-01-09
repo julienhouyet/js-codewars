@@ -28,7 +28,7 @@ function points(games) {
   let totalPoints = 0;
 
   for (const game of games) {
-    score = game.split(":");
+    let score = game.split(":");
     if (score[0] > score[1]) {
       totalPoints += 3;
     } else if (score[0] === score[1]) {
